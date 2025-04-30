@@ -1,0 +1,78 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+}
+
+header {
+  height: 60vh;
+  text-align: center;
+  margin-top: 40vh;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.projects {
+  width: 30vw;
+
+  padding: 5px;
+}
+
+.experience {
+  width: 40vw;
+  border-left: 1px solid black; 
+  border-right: 1px solid black; 
+  padding: 5px;
+}
+
+.education {
+  width: 30vw;
+  padding: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.review {
+  max-width: 220px; 
+  padding: 10px;
+  
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  align-content: center;
+}
+
+#contact-main {
+  display: flex;
+  justify-content: center;
+}
+
+input[type] {
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 4px;
+}
