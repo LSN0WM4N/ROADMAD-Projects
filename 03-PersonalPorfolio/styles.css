@@ -1,0 +1,184 @@
+body {
+  background-color: black;
+  color: #ccc;
+
+  --primary-color: #eee;
+  --secondary-color: #ccc;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  
+  width: 97vw;
+  padding: 10px 0px;
+  
+  display: flex;
+  justify-content: space-between;
+
+  background-color: black;
+}
+
+nav span {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+nav a {
+
+  text-align: center;
+
+  margin-left: 5px;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  border: 1px dotted var(--secondary-color);
+}
+
+header {
+  height: 60vh;
+  text-align: center;
+  margin-top: 40vh;
+}
+
+#arrow {
+  font-size: 100px;
+  margin-top: -30px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+
+  width: 800px;
+  margin: 0px auto;
+}
+
+.projects {
+  width: 30vw;
+
+  padding: 10px;
+}
+
+ul {
+  padding-left: 6px;
+}
+
+li {
+  list-style: none;
+}
+
+.experience {
+  width: 40vw;
+  border-left: 1px solid var(--primary-color); 
+  border-right: 1px solid var(--primary-color); 
+  padding: 10px;
+}
+
+.education {
+  width: 30vw;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.review {
+  max-width: 220px; 
+  padding: 10px;
+  
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  align-content: center;
+}
+
+#contact-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 20px;
+}
+
+.contact-form {
+  width: 400px;
+  padding-bottom: 10px;
+}
+
+input[type] {
+  margin-bottom: 10px;
+}
+
+textarea {
+ height: 100px;
+}
+
+button {
+  margin: 4px;
+}
+
+.projects-main {
+  border: none;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  display:flex;
+  padding: 10px;
+
+  border-inline: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+
+  width: 800px;
+}
+
+.project-card-info {
+  margin: 0px 10px;
+}
+
+.project-card:nth-child(even) {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.project-card-image-container {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card-image-container img {
+  max-height: 140px;
+  max-width: 140px;
+}
