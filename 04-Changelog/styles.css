@@ -1,0 +1,81 @@
+/*I'm sorry, i used AI help to get this style, i was stuck*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  line-height: 1.6;
+
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  list-style: none;
+}
+
+.change-info {
+  border-left: 3px solid black;
+  padding: 0 0 1.5rem 1.5rem;
+  position: relative;
+}
+
+.change-info:last-child {
+  padding-bottom: 0;
+  border-left: 3px solid transparent;
+}
+
+.change-info:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.date {
+  font-weight: 600;
+  color: #ccc;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.decorator {
+  width: 20px;
+}
+
+.changes {
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.changes:before {
+  content: "•";
+  color: #eee;
+  position: absolute;
+  left: -1rem;
+}
+
+button {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: gray;
+} 

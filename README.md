@@ -8,3 +8,5 @@ Here i'll be pushing my finished projects from the Roadmap.sh Frontend roadmap.
 [BasicHTMLWebsite](https://roadmap.sh/projects/basic-html-website)
 
 [PersonalPorfolio](https://roadmap.sh/projects/portfolio-website)
+
+[ChangelogComponent](https://roadmap.sh/projects/changelog-component)
