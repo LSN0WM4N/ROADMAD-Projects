@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessible From</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <main>
+      <section class="left-container">
+        <form> 
+
+          <div class="input-wrapper">  
+            <label for="full-name" aria-label='Enter your full name'>Full Name</label>
+            <input required aria-required type="text" name="full-index" placeholder="What should we call you?" tabindex="1">
+          </div>
+
+          <div class="input-wrapper">  
+            <label for="email" aria-label="Enter your email">Email</label>
+            <input required aria-required type="email" name="email" placeholder="Your email goes here" tabindex="2" class='wrong'>
+            <span aria-invalid class='mail-error'>Email is already taken</span>
+          </div>
+
+          <div class="input-wrapper">  
+            <label aria-label="Please type your password" for="password">Enter Password</label>
+            <div class="password-container">
+              <input required aria-required class='correct' type="text" name="password" placeholder="xxxxxxxx" tabindex="3">
+              <i class="fa fa-eye-slash"></i>
+            </div>
+            <span aria-invalid class='password-error'></span>
+          </div>
+
+          <div class="input-wrapper">  
+            <label aria-label="Please confirm your password" for="confirm-password">Confirm Password</label>
+            <div class="password-container">
+              <input required aria-required type="password" name="confirm-password" placeholder="xxxxxxxx" tabindex="4">
+              <i class="fa fa-eye"></i>
+            </div>
+            <span class='confirm-error'></span>
+          </div>
+
+          <button aria-label="Press to update your profile" type="submit" tabindex="5">Update Profile</button>
+        </form>
+      </section>
+      <section class='right-container'>
+        <div class="progress-wrapper">
+          <div class="circle-progress" style="--percent: 65"></div>
+          <span>65%</span>
+        </div>
+        <h2>Profile Completeness</h2>
+        <div class="profile-tasks">
+          <p class='completed'>Create Account</p>
+          <p class='completed'>Update Roadmap Progress</p>
+          <p class='completed'>Setup Public Profile</p>
+          <p class='incomplete'>Complete your first project</p>
+          <p class="incomplete">Invite your friends</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
