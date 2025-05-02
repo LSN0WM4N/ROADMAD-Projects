@@ -1,0 +1,180 @@
+/* Begin cloud card*/ 
+.text-cloud {
+  width: 300px;
+}
+
+.cloud {  
+  padding: 20px;
+  color: white;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: black;
+
+  font-size: 20px;
+}
+
+#cloud-decorator {
+  width: 0px;
+  height: 0px;
+
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid black;
+
+  position: relative;
+  left: 30px;
+  top: -10px;
+}
+
+.image-wrapper {
+  display: flex;
+}
+
+.text-cloud .image-wrapper img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.name-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 10px;
+}
+
+
+.name-box h3 {
+  margin: 0;
+}
+
+
+/* End cloud card*/
+/* Begin Card*/
+
+.card {
+  margin-top: 40px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+
+  font-size: 20px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card img {
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+}
+
+.name-box {
+  font-size: 15px;
+}
+
+/* End Card */
+/* Begin Boxed Review */
+
+.boxed-review {
+  display: flex;
+
+  margin-top: 40px;
+}
+
+.boxed-review img {
+  height: 200px;
+  border-radius: 20px;
+}
+
+.text-container {
+  height: 160px;
+  width: 400px;
+  margin-left: 10px;
+
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+}
+
+.boxed-review .name-box {
+  margin: 0;
+  font-size: 18px;
+}
+
+.boxed-review span {
+  color: #bbb;
+}
+
+.boxed-review p {
+  font-size: 15px;
+  color: white;
+}
+/* End Boxed Review */
+
+/* Begin Carrousel */
+
+.carrousel-card {
+  margin-top: 40px;
+  width: 600px;
+
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrousel-card p {
+  text-align: center;
+}
+
+.carrousel-wrapper {
+  display:flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel {
+  margin: 0;
+  display: flex;
+  width: 400px;
+
+  justify-content: space-between;
+  align-content: center;
+}
+
+.left-arrow, .right-arrow {
+  margin: auto auto;
+}
+
+.profile-images {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 80px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.profile-image:nth-child(odd) {
+  width: 60px;
+  height: 60px;
+  opacity: 0.2;
+
+  margin: 0;
+}
+/* End Carrousel */
