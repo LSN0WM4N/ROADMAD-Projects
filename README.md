@@ -1,4 +1,4 @@
-# ROADMAOP.sh Projects
+# ROADMAP.sh Frontend Projects
 
 Here i'll be pushing my finished projects from the Roadmap.sh Frontend roadmap.
 
@@ -16,3 +16,5 @@ Here i'll be pushing my finished projects from the Roadmap.sh Frontend roadmap.
 [Datepicker UI](https://roadmap.sh/projects/datepicker-ui) 
 
 [Accessible Form](https://roadmap.sh/projects/accessible-form-ui)
+
+[Image Grid Layout](https://roadmap.sh/projects/image-grid)
