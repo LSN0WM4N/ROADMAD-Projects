@@ -21,4 +21,6 @@ Here i'll be pushing my finished projects from the Roadmap.sh Frontend roadmap.
 
 [Tooltip UI](https://roadmap.sh/projects/tooltip-ui)
 
+[Tabs](https://roadmap.sh/projects/simple-tabs) 
+
 
