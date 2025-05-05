@@ -23,4 +23,6 @@ Here i'll be pushing my finished projects from the Roadmap.sh Frontend roadmap.
 
 [Tabs](https://roadmap.sh/projects/simple-tabs) 
 
+[Cookie Consent](https://roadmap.sh/projects/cookie-consent)
+
 
