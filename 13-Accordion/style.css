@@ -56,5 +56,6 @@
 
 .animated-arrow {
   rotate: 180deg;
+
   animation: rotate 0.5s linear;
 }

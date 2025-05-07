@@ -24,5 +24,5 @@ for (let i = 0; i < itemArray.length; ++i) {
       item.classList.add('show');
       arrow.classList.add('animated-arrow');
     }
-  })
+  });
 }
