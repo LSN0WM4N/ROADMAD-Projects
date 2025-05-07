@@ -1,0 +1,60 @@
+.acordeon-container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 600px;
+}
+
+.acordeon-header {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px 0 2px 0;
+}
+
+.acordeon-header h2 {
+  padding: 10px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.acordeon-header div {
+  padding: 0px 10px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.acordeon-item-info {
+  padding: 0 10px;
+
+  border: 2px solid black;
+  border-radius: 10px;
+
+  display: none;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-25%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.show {
+  display: block;
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+.animated-arrow {
+  rotate: 180deg;
+  animation: rotate 0.5s linear;
+}

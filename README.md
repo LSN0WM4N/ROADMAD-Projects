@@ -26,3 +26,5 @@ Here i'll be pushing my finished projects from the Roadmap.sh Frontend roadmap.
 [Cookie Consent](https://roadmap.sh/projects/cookie-consent)
 
 [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea)
+
+[Accordion](https://roadmap.sh/projects/accordion)
