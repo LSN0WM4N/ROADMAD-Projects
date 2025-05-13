@@ -28,3 +28,5 @@ Here i'll be pushing my finished projects from the Roadmap.sh Frontend roadmap.
 [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea)
 
 [Accordion](https://roadmap.sh/projects/accordion)
+
+[Age Calculator](https://roadmap.sh/projects/age-calculator)

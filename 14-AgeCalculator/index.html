@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Age Calculator</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+  </head>
+  <body>
+    <main>
+      
+    <div id="results"></div>
+    <form id='datepicker' autocomplete='off'>
+      <input type='text' id='calendar' readonly></input>
+      <button type="submit" >Calculate</button>
+    </form>
+
+    </main>
+
+  </body>
+  
+  <script src="https://unpkg.com/js-datepicker"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.6.1/build/global/luxon.min.js"></script>
+
+  <script>
+    const { DateTime } = luxon;
+
+    let birthDate = "-1";
+    const picker = datepicker('#calendar', {
+      onSelect: (_, date) => {
+        birthDate = DateTime.fromJSDate(date).toFormat('yyyy-MM-dd');    
+      },
+      minDate: new Date(1900, 0, 1),
+      maxDate: new Date(),
+    });
+
+    const form = document.getElementById('datepicker');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (birthDate == "-1")
+        return;
+      const bdt = DateTime.fromISO(birthDate);
+      const result = calculateAge(bdt, DateTime.now());
+
+      printResult(result);
+    })
+
+    const calculateAge = (birthDate, now) => {
+      let years = Math.floor(now.diff(birthDate, 'years').values.years);
+      birthDate = birthDate.plus({ years: years });
+      
+      let months = Math.floor(now.diff(birthDate, 'months').values.months);
+      birthDate = birthDate.plus({ months: months });
+      
+      let days = Math.floor(now.diff(birthDate, 'days').values.days);
+
+      return {years, months, days};
+    }
+
+    const printResult = (result) => {
+      const docElement = document.getElementById('results');
+      results.innerText = `${result.years} years, ${result.months} months and ${result.days} days since`;
+    }
+
+  </script>
+</html>
