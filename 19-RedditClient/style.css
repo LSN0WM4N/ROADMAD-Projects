@@ -1,0 +1,155 @@
+ * {
+  padding: 0;
+  margin: 0;
+
+  text-decoration: none;
+}
+
+body {
+  height: calc(100vh - 20px);
+}
+
+#app {
+  display: flex;
+
+  overflow-x: auto;
+  
+  margin: 10px;
+  padding 10px;
+  height: 100%;
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#app::-webkit-scrollbar {
+  display: none;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
+.add-subreddit {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  z-index: 1;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.add-subreddit:hover {
+  background-color: #ccc;
+}
+
+.subreddit-lane {
+  flex: 0 0 auto;
+  width: 300px;
+
+  font-family: Ubuntu, sans-serif;
+
+  padding: 10px 20px 10px 0;
+  border-right: 1px solid black;
+
+  overflow: auto;
+}
+
+.subreddit-lane:last-child {
+  margin-right: 100px;
+}
+
+.subreddit-lane::-webkit-scrollbar {
+  display: none;
+}
+
+.lane-post {
+  display: flex;
+  align-content: center;
+
+  margin-bottom: 10px;
+
+  border-bottom: 1px dotted black;
+  border-right: 1px dotted black;
+}
+
+.lane-header {
+  margin: 0 0 10px 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.trash-button {
+  padding: 0 10px;
+  border-radius: 30%;
+
+  background-color: white;
+  border: none;
+}
+
+.trash-button:hover {
+  background-color: #ccc;
+}
+
+.upvotes {
+  width: 20%;
+
+  text-align: center;
+}
+
+.post-title {
+  width: 80%;
+}
+
+/* Float page */
+.hidden {
+  visibility: hidden;
+}
+
+.find-subreddit {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+
+  opacity: 4;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.find-subreddit input {
+  height: 1.8rem;
+  margin: 5px;
+  padding: 5px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.find-subreddit button {
+  margin-top: 10px;
+  background-color: #eee;
+  height: 2rem;
+  width: 100px;
+
+  border-radius: 5px;
+}

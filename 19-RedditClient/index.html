@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reddit Client</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main id='app'></main> 
+    <div id="float-page">
+      <form class="find-subreddit hidden">
+        <label for="subreddit">Subreddit</label>
+        <input 
+          type="text" 
+          name="subreddit" 
+          placeholder="Enter the subreddit..."
+          autocomplete="off"
+        >
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </body>
+  <script src="./index.js" type='module'></script>
+</html>
